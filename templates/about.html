@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block head %} About {% endblock %}
+
+{% block css %}
+  @import url("../static/css/about.css")
+{% endblock %}
+
+{% block fullwidth %}
+
+ <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand" href="/" style="font-family: 'Caveat', cursive; font-size: 25px">Neural Art</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                      <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-item nav-link active" href="/about">About</a>
+                      <a class="nav-item nav-link" href="/stylize">Stylize</a>
+                      <div class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://arxiv.org/abs/1508.06576" target="_blank">Research Paper</a>
+                            <a class="dropdown-item" href="https://www.tensorflow.org/tutorials/generative/style_transfer" target="_blank">Tenser Flow</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://gitlab.com/vaseem_naazleen_shaik/neural-style-transfer" target="_blank">GitLab Repo</a>
+                          </div>
+                        </div>
+                  </div>
+                  </div>
+              </nav>
+</div>
+
+{% endblock %}
+
+{% block body %}
+
+    <main role="main">
+        <br>
+        <h1>About</h1>
+        <hr>
+        <p>Our mission is to provide a novel artistic painting tool that allows people to convert their images into their favourite artist's artwork with just a few clicks.
+            All you need to do is upload a photo and an art.
+            We apply an algorithm developed by Leon Gatys, Alexander Ecker and Matthias Bethge.</p>
+    </main>
+    <h3>Neural Style Transfer</h3>
+    <p>We use neural style transfer algorithm to create an image which simultaneously matches the content representation of the photograph and the style representation of the artwork.
+        The artificial neural system seperates image content from style, thus allowing to recast the content of one image in the style of any other image.
+        This web app displays a beautiful example of how neural representations can independently capture the content of an image and the style in which it is represented</p>
+
+    <br>
+    <br>
+
+    <!-- MEET THE TEAM -->
+
+    <div class="container-fluid padding">
+    <div class="row welcome text-center">
+    	<div class="col-12">
+		<h2> Meet The Team </h2>
+	</div>
+
+    </div>
+    </div>
+    <hr>
+    <div class="container-fluid padding">
+    <div class="row padding">
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top" src="static/img/vnaaz.jpg" style="height:25rem">
+			<div class="card-body">
+				<h4 class="card-title"> Vaseem Naazleen Shaik </h4>
+				<p class="card-text"> Naazleen is a Computer Science student at VVIT, Andhra Pradesh. She is a Techie and loves Programming. </p>
+				<a href="https://www.linkedin.com/in/vaseem-naazleen-shaik-7b1021194/" class="btn btn-outline-secondary"> Connect </a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-4">
+                <div class="card">
+                        <img class="card-img-top" src="static/img/shivangi.jpg" style="height:25rem">
+                        <div class="card-body">
+                                <h4 class="card-title"> Shivangi Tomar </h4>
+                                <p class="card-text"> Shivangi is a Computer Science student at the National Institute of Technology, Karnataka. She loves coding and baking! </p>
+                                <a href="https://in.linkedin.com/in/shivangi-tomar-8855a41a3?trk=people-guest_people_search-card" class="btn btn-outline-secondary"> Connect </a>
+                        </div>
+                </div>
+        </div>
+
+
+	<div class="col-md-4">
+                <div class="card">
+                        <img class="card-img-top" src="static/img/avishi.jpg" style="height:25rem">
+                        <div class="card-body">
+                                <h4 class="card-title"> Avishi Gupta </h4>
+                                <p class="card-text"> Avishi is pursuing Computer Science and Design at IIIT Delhi. She is an open source enthusiast and loves playing badminton.</p>
+                                <a href="https://www.linkedin.com/in/avgupt/" class="btn btn-outline-secondary"> Connect </a>
+                        </div>
+                </div>
+        </div>
+
+
+    </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h3>Credits</h3>
+    <p><a href="https://arxiv.org/abs/1508.06576" target="_blank">Link to research paper</a></p>
+
+    <br>
+
+    <h3>Code</h3>
+    <p><a href="https://gitlab.com/vaseem_naazleen_shaik/neural-style-transfer" target="_blank">Link to GitLab repository</a></p>
+{% endblock %}

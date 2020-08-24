@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %} Stylize {% endblock %}
+
+{% block css %}
+    @import url("../static/css/stylize.css")
+{% endblock %}
+
+{% block fullwidth %}
+
+ <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand" href="/" style="font-family: 'Caveat', cursive; font-size: 25px">Neural Art</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                      <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-item nav-link" href="/about">About</a>
+                      <a class="nav-item nav-link active" href="/stylize">Stylize</a>
+                      <div class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://arxiv.org/abs/1508.06576" target="_blank">Research Paper</a>
+                            <a class="dropdown-item" href="https://www.tensorflow.org/tutorials/generative/style_transfer" target="_blank">Tenser Flow</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://gitlab.com/vaseem_naazleen_shaik/neural-style-transfer" target="_blank">GitLab Repo</a>
+                          </div>
+                        </div>
+                  </div>
+                  </div>
+              </nav>
+</div>
+
+    <div class="sidenav">
+        <form action="/uploader" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <label for = "contentFile" id="contentLabel" class="text-center">Content Image</label>
+                <input type="file" name="contentFile" id="contentFile" style="display: none;" onchange="return validateImage()">
+            <label for = "styleFile" id="styleLabel" class="text-center">Style Image</label >
+                <input type="file" name="styleFile" id="styleFile" style="display: none;" onchange="return validateImage()">
+                <input class = "my-btn" type="submit" value="Submit" name="submit" id="submitFiles">
+        </form>
+    </div>
+
+    <div class="pic-box">
+        <div class="welcome-text">
+            <h2>Welcome to the Neural Art Photo Editor.</h2>
+            <br>
+            <p>
+                There are no images selected. Please upload a content image and a style image to start stylizing.
+            </p>
+            <br>
+        </div>
+        <div class="img-div">
+            <img id="contentImg" src="#" class="float-left" />
+            <img id="styleImg" src=# class="float-right" />
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="../static/js/stylize.js"></script>
+{% endblock %}

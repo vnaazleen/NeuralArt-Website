@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %} Stylize {% endblock %}
+
+{% block css %}
+    @import url("../static/css/result.css")
+{% endblock %}
+
+{% block fullwidth %}
+
+ <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand" href="/" style="font-family: 'Caveat', cursive; font-size: 25px">Neural Art</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                      <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-item nav-link" href="/about">About</a>
+                      <a class="nav-item nav-link active" href="/stylize">Stylize</a>
+                      <div class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://arxiv.org/abs/1508.06576" target="_blank">Research Paper</a>
+                            <a class="dropdown-item" href="https://www.tensorflow.org/tutorials/generative/style_transfer" target="_blank">Tenser Flow</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://gitlab.com/vaseem_naazleen_shaik/neural-style-transfer" target="_blank">GitLab Repo</a>
+                          </div>
+                        </div>
+                  </div>
+                  </div>
+              </nav>
+</div>
+
+    <div class="sidenav">
+        <a href="/stylize">Try again</a>
+        <a style="padding-top:15px" href="{{ url_for('static', filename=filename) }}" download>Download</a>
+    </div>
+
+    <div class="pic-box" style="max-width:1300px; max-height:700px">
+        <img style= "object-fit: contain;" src= "{{ url_for('static', filename=filename) }}"  alt="Stylized picture">
+    </div>
+
+
+
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="../static/js/result.js"></script>
+{% endblock %}
