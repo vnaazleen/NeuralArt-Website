@@ -1,0 +1,39 @@
+body {
+    background-color: #FBFBFF;
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+
+.nav-item {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.block {
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.navbar {
+    font-family: 'Cabin', sans-serif;
+}
+
+.nav-link.active {
+    border-bottom: 4px solid #FAA916;
+}
+
+h1 {
+    font-family: 'Sniglet', cursive;
+}
+
+h2 {
+    font-family: 'Cabin', sans-serif;
+}
+
+h3 {
+    font-family: 'Cabin', sans-serif;
+}

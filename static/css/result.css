@@ -1,0 +1,49 @@
+.sidenav {
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    margin: 15px;
+    border-radius: 8px;
+    background: #343a40;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #343a40;
+    color: grey;
+    display: block;
+    outline: none;
+    border: none;
+    width: 180px;
+}
+
+.sidenav a:hover {
+    color: #FFF;
+    border-left: 4px solid #FAA916;
+}
+
+
+.pic-box {
+    position: fixed;
+    z-index: 1;
+    margin-top: 15px;
+    margin-left: 210px;
+    border-radius: 8px;
+    background: #343a40;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    padding: 8px 0;
+    color: #FFF;
+}
+
+.box-text {
+    margin: 40px;
+}
+
+
+img {
+    margin: 40px;
+}
