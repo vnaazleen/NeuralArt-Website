@@ -1,6 +1,12 @@
 # NeuralArt-Website
 NeuralArt a website implementing  Neural Style Transfer
 
+![Author](https://img.shields.io/badge/author-vnaazleen-blue)
+[![HitCount](http://hits.dwyl.com/vnaazleen/NeuralArt-Website.svg)](http://hits.dwyl.com/vnaazleen/NeuralArt-Website)
+![Issues](https://img.shields.io/github/issues/vnaazleen/NeuralArt-Website)
+![Stars GitHub](https://img.shields.io/github/stars/vnaazleen/NeuralArt-Website)
+![Size](https://img.shields.io/github/repo-size/vnaazleen/NeuralArt-Website)
+
 
 ## Neural Style Transfer
 Neural style transfer is an optimization technique takes two images 
@@ -13,6 +19,22 @@ The below shows how style transfer looks :
 
 ![nst](https://user-images.githubusercontent.com/54474853/85428391-c13fdb00-b59a-11ea-9769-01affe0839ec.png)
 
+## Try it
+* Try stylizing your images with NeuralArt by some quick steps
+* Install TensorFlow-Hub
+```
+$ pip install "tensorflow>=1.15,<2.0"
+$ pip install --upgrade tensorflow-hub
+```
+* Clone the repo using
+```
+$ git clone https://github.com/vnaazleen/NeuralArt-Website.git
+```
+* Run the server
+```
+$ python app.py
+```
+* You are ready to stylize you images now 
 
 ## REFERENCES :
 * [Wikipedia NST](https://en.wikipedia.org/wiki/Neural_Style_Transfer#NST)
