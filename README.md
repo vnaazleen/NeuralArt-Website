@@ -36,7 +36,7 @@ $ python app.py
 ```
 * You are ready to stylize you images now 
 
-## REFERENCES :
+## References 
 * [Wikipedia NST](https://en.wikipedia.org/wiki/Neural_Style_Transfer#NST)
 * [A Neural Algorithm of Artistic Style (Gatys et al.)](https://arxiv.org/pdf/1508.06576.pdf)
 * [TensorFlow NST Tutorial](https://www.tensorflow.org/tutorials/generative/style_transfer)
