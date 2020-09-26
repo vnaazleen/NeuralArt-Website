@@ -17,7 +17,7 @@ and blend them together so the output image looks like the content image, but  â
 
 The below shows how style transfer looks :
 
-![nst](https://user-images.githubusercontent.com/54474853/85428391-c13fdb00-b59a-11ea-9769-01affe0839ec.png){:height="600px" width="1000px"}
+![nst](https://user-images.githubusercontent.com/54474853/85428391-c13fdb00-b59a-11ea-9769-01affe0839ec.png)
 
 ## Try it
 * Try stylizing your images with NeuralArt by some quick steps
