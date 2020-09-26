@@ -1,4 +1,4 @@
-# NeuralArt-Website
+# NeuralArt-Website 🎨🖌
 NeuralArt a website implementing  Neural Style Transfer
 
 ![Author](https://img.shields.io/badge/author-vnaazleen-blue)
