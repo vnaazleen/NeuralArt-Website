@@ -17,7 +17,7 @@ and blend them together so the output image looks like the content image, but  â
 
 The below shows how style transfer looks :
 
-![nst](https://user-images.githubusercontent.com/54474853/85428391-c13fdb00-b59a-11ea-9769-01affe0839ec.png)
+![nst](https://user-images.githubusercontent.com/54474853/85428391-c13fdb00-b59a-11ea-9769-01affe0839ec.png){:height="600px" width="1000px"}
 
 ## Try it
 * Try stylizing your images with NeuralArt by some quick steps
@@ -35,6 +35,9 @@ $ git clone https://github.com/vnaazleen/NeuralArt-Website.git
 $ python app.py
 ```
 * You are ready to stylize you images now 
+
+## Demo
+<img src="https://user-images.githubusercontent.com/54474853/94331428-d9842380-ffe9-11ea-91d6-ec563c689176.gif" alt="neuralart_website_gif" width="1000" height="600"/> 
 
 ## References 
 * [Wikipedia NST](https://en.wikipedia.org/wiki/Neural_Style_Transfer#NST)
