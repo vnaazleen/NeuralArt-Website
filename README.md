@@ -21,6 +21,7 @@ The below shows how style transfer looks :
 
 ## Try it
 * Try stylizing your images with NeuralArt by some quick steps
+* Intall python from [here](https://www.python.org/downloads/)
 * Install Flask web framework
 ```
 $ pip install Flask
