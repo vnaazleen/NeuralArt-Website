@@ -1,6 +1,9 @@
 # NeuralArt-Website 🎨🖌
 NeuralArt a website implementing  Neural Style Transfer
 
+![NeuralArt](https://user-images.githubusercontent.com/54474853/104705024-68ef4700-573f-11eb-8f5c-72686f53c87c.png)
+
+
 ![Author](https://img.shields.io/badge/author-vnaazleen-blue)
 [![HitCount](http://hits.dwyl.com/vnaazleen/NeuralArt-Website.svg)](http://hits.dwyl.com/vnaazleen/NeuralArt-Website)
 ![Issues](https://img.shields.io/github/issues/vnaazleen/NeuralArt-Website)
