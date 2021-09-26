@@ -5,7 +5,6 @@ NeuralArt a website implementing  Neural Style Transfer
 
 
 ![Author](https://img.shields.io/badge/author-vnaazleen-blue)
-[![HitCount](http://hits.dwyl.com/vnaazleen/NeuralArt-Website.svg)](http://hits.dwyl.com/vnaazleen/NeuralArt-Website)
 ![Issues](https://img.shields.io/github/issues/vnaazleen/NeuralArt-Website)
 ![Stars GitHub](https://img.shields.io/github/stars/vnaazleen/NeuralArt-Website)
 ![Size](https://img.shields.io/github/repo-size/vnaazleen/NeuralArt-Website)
